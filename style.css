@@ -4,7 +4,7 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
@@ -13,16 +13,16 @@
 .image {
   width: 100%;
 }
-.aaa .more_inf {
+.header .link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .aaa { 
+  .header { 
     text-align: center;
   }
 }
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -32,7 +32,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.task-row {
   display: flex;
 }
 ul {
@@ -130,7 +130,7 @@ button {
 }
 
 /* Completed */
-#completed-tasks .text {
+#complete .text {
   text-decoration: line-through;
   color: #888;
 }
