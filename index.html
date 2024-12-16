@@ -7,51 +7,51 @@
   </head>
   <body class="page">
     <header class="header">
-      <img class="img" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix. How to make decisions on what's urgent and important">
-      <a class="link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      <img class="header__img" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix. How to make decisions on what's urgent and important">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
-    <main class="main">
+    <main class="todo-list">
       <h1 hidden>The Eisenhower matrix. How to make decisions on what's urgent and important</h1>
-      <section id="adding">
-        <label class="heading" for="new-task">Add Item</label>
-        <div class="task-row">
-          <input class="input task" id="new-task" type="text">
-          <button class="btn">Add</button>
+      <section class="todo-list_section">
+        <label class="todo-list__title">Add Item</label>
+        <div class="task task__row ">
+          <input class="task__input task__input_new task__form" type="text">
+          <button class="task__btn">Add</button>
         </div>
       </section>
-      <section>
-        <h2 class="heading">Todo</h2>
-        <ul class="tasks" id="incomplete">
-          <li class="item">
-            <input class="checkbox" type="checkbox">
-            <label class="text task">Pay Bills</label>
-            <input class="input task" type="text" >
-            <button class="btn edit">Edit</button>
-            <button class="btn delete">
-              <img class="remove" src="./remove.svg" alt=" ">
+      <section class="todo-list__section">
+        <h2 class="todo-list__title">Todo</h2>
+        <ul class="todo-list__tasks todo-list__tasks_incomplete">
+          <li class="todo-list__task task">
+            <input class="task__checkbox" type="checkbox">
+            <label class="task__text task__form">Pay Bills</label>
+            <input class="task__input task__form" type="text" >
+            <button class="task__btn task__btn_edit">Edit</button>
+            <button class="task__btn task__btn_delete">
+              <img class="task__btn-icon" src="./remove.svg" alt=" ">
             </button>
           </li>
-          <li class="editMode item">
-            <input class="checkbox" type="checkbox">
-            <label class="text task">Go Shopping</label>
-            <input class="input task" type="text" value="Go Shopping">
-            <button class="btn edit">Save</button>
-            <button class="btn delete">
-              <img class="remove" src="./remove.svg" alt=" ">
+          <li class="todo-list__task todo-list__task_edit task">
+            <input class="task__checkbox" type="checkbox">
+            <label class="task__text task__form">Go Shopping</label>
+            <input class="task__input task__form" type="text" value="Go Shopping">
+            <button class="task__btn task__btn_edit">Save</button>
+            <button class="task__btn task__btn_delete">
+              <img class="task__btn-icon" src="./remove.svg" alt=" ">
             </button>
           </li>
         </ul>
       </section>
-      <section>
-        <h2 class="heading">Completed</h2>
-        <ul class="tasks" id="complete">
-          <li class="item">
-            <input class="checkbox" type="checkbox" checked>
-            <label class="text task">See the Doctor</label>
-            <input class="input task" type="text" >
-            <button class="btn edit">Edit</button>
-            <button class="btn delete">
-              <img class="remove" src="./remove.svg" alt=" ">
+      <section class="todo-list__section">
+        <h2 class="todo-list__title">Completed</h2>
+        <ul class="todo-list__tasks todo-list__tasks_complete">
+          <li class="todo-list__task task">
+            <input class="task__checkbox" type="checkbox" checked>
+            <label class="task__text task__form">See the Doctor</label>
+            <input class="task__input task__form" type="text" >
+            <button class="task__btn task__btn_edit">Edit</button>
+            <button class="task__btn task__btn_delete">
+              <img class="task__btn-icon" src="./remove.svg" alt=" ">
             </button>
           </li>
         </ul>
